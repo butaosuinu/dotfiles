@@ -1,0 +1,21 @@
+{
+	"color_scheme": "Packages/Colorsublime-Themes/Hail.tmTheme",
+	"default_line_ending": "unix",
+	"draw_white_space": "all",
+	"flatland_square_tabs": true,
+	"font_face": "SourceHanCodeJP-Light",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"CSS Snippets",
+		"Grunt Snippets",
+		"IMESupport",
+		"jQuery",
+		"Vintage"
+	],
+	"open_files_in_new_window": false,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "Flatland Dark.sublime-theme",
+	"word_wrap": true
+}
