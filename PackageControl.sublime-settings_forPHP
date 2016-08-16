@@ -1,0 +1,34 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Better CoffeeScript",
+		"Color Highlighter",
+		"Colorsublime",
+		"ConvertToUTF8",
+		"EJS",
+		"EJS 2",
+		"Emblem.js Syntax Highlighting",
+		"Emmet",
+		"Hayaku - tools for writing CSS faster",
+		"IMESupport",
+		"Laravel 4 Snippets",
+		"LESS",
+		"List stylesheet variables",
+		"Package Control",
+		"PHP Completions Kit",
+		"php-snippets",
+		"Smarty",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-php",
+		"SublimeLinter-phpcs",
+		"SublimeLinter-phplint",
+		"Theme - Flatland",
+		"UIkit autocomplete"
+	]
+}
