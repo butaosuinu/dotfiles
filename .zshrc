@@ -28,7 +28,8 @@ autoload -Uz colors
 colors
 
 # PROMPT
-PROMPT='%F{047}%B[%D{%a %m/%d %T}]%b %F{006}%m@%n: %~'
+PROMPT='%F{047}%B[%D{%a %m/%d %T}]%b %F{006}%m@%n: %~ %(?.%B%F{green}.%B%F{red})%(?!(๑・ᴗ・๑)!(#^ω^%) < noob!)%f%b ${vcs_info_msg_0_}
+%F{255}$ '
 RPROMPT=''
 
 # vcs info (git branch)
@@ -40,8 +41,6 @@ zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
 zstyle ':vcs_info:*' formats "%F{yellow}%c%u(%b)%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
-PROMPT=$PROMPT' ${vcs_info_msg_0_}
-%F{255}$ '
 
 # Completion
 autoload -Uz compinit
