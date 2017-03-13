@@ -28,7 +28,7 @@ autoload -Uz colors
 colors
 
 # PROMPT
-PROMPT='%F{047}%B[%D{%a %m/%d %T}]%b %F{006}%m@%n: %~ %(?.%B%F{green}.%B%F{red})%(?!(๑・ᴗ・๑)!(#^ω^%) < noob!)%f%b ${vcs_info_msg_0_}
+PROMPT='%F{047}%B[%D{%a %m/%d %T}]%b %F{123}%m@%n: %~ %(?.%B%F{green}.%B%F{red})%(?!(๑・ᴗ・๑)!(#^ω^%) < noob!)%f%b ${vcs_info_msg_0_}
 %F{255}$ '
 RPROMPT=''
 
