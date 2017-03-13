@@ -7,6 +7,11 @@
         "gutter_theme_excludes": [],
         "lint_mode": "load/save",
         "linters": {
+            "eslint": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
             "golint": {
                 "@disable": false,
                 "args": [],
@@ -17,7 +22,7 @@
                 "args": [],
                 "excludes": []
             },
-            "jshint": {
+            "ruby": {
                 "@disable": false,
                 "args": [],
                 "excludes": []
@@ -32,9 +37,7 @@
                 "$GOPATH/bin/",
                 "/Users/takeyu/.nodebrew/current/bin"
             ],
-            "windows": [
-                "$GOPATH/bin/"
-            ]
+            "windows": []
         },
         "python_paths": {
             "linux": [],
