@@ -1,0 +1,9 @@
+[user]
+	name = butaosuinu
+	email = buta.osuinu@gmail.com
+[alias]
+	st = status
+	ps = push
+	ch = checkout
+	b = branch
+	cm = commit
