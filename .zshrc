@@ -61,6 +61,8 @@ alias g='git'
 alias grep='grep -n --color=auto'
 alias la='ls -al'
 alias ll='ls -l'
+alias v='vim'
+alias sb='subl'
 
 case ${OSTYPE} in
     darwin*)
