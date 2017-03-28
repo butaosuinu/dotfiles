@@ -4,6 +4,7 @@ export GOBIN=$GOPATH/bin
 export PATH=$GOPATH/bin:$HOME/.nodebrew/current/bin:$PATH
 export GO15VENDOREXPERIMENT=1
 export LANG=ja_JP.UTF-8
+export TERM=xterm-256color
 
 # syntax-highlighting
 if [ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
