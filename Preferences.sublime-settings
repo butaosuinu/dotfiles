@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Colorsublime-Themes/Hail.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Hail.tmTheme",
 	"default_line_ending": "unix",
 	"draw_white_space": "all",
 	"flatland_square_tabs": true,
@@ -7,15 +7,21 @@
 	"font_size": 11,
 	"ignored_packages":
 	[
+		"AngularJS",
 		"CSS Snippets",
+		"GitHub Flavored Markdown Preview",
 		"Grunt Snippets",
 		"IMESupport",
+		"JavaScript Console",
 		"jQuery",
+		"Markdown",
+		"SublimeLinter-jshint",
 		"Vintage"
 	],
 	"open_files_in_new_window": false,
 	"show_encoding": true,
 	"show_line_endings": true,
 	"theme": "Flatland Dark.sublime-theme",
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、。「」【】『』（）！？　てにをはがのともへでや",
 	"word_wrap": true
 }
