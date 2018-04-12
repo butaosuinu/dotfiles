@@ -1,7 +1,7 @@
 # paths
 export GOPATH=$HOME/gocode
 export GOBIN=$GOPATH/bin
-export PATH=$GOPATH/bin:$HOME/.nodebrew/current/bin:$PATH
+export PATH=$GOPATH/bin:$HOME/.pyenv/shims:$HOME/.nodebrew/current/bin:$PATH
 export GO15VENDOREXPERIMENT=1
 export LANG=ja_JP.UTF-8
 export TERM=xterm-256color
@@ -29,7 +29,8 @@ autoload -Uz colors
 colors
 
 # PROMPT
-PROMPT='%F{026}%B[%D{%a %m/%d %T}]%b %F{123}%m@%n: %~ %(?.%B%F{green}.%B%F{red})%(?!(๑・ᴗ・๑)!(#^ω^%) < noob!)%f%b ${vcs_info_msg_0_}
+PROMPT='%F{026}%B[%D{%a %m/%d %T}]%b %F{123}%m@%n: %~ 
+%(?.%B%F{green}.%B%F{red})%(?!(๑・ᴗ・๑)!(#^ω^%) < noob!)%f%b ${vcs_info_msg_0_}
 %f$ '
 RPROMPT=''
 
@@ -84,3 +85,6 @@ case ${OSTYPE} in
         alias ls='ls -F --color=auto'
         ;;
 esac
+
+
+brew-cask-upgrade(){ for app in $(brew cask list); do local latest="$(brew cask info "${app}" | awk 'NR==1{print $2}')"; local versions=($(ls -1 "/usr/local/Caskroom/${app}/.metadata/")); local current=$(echo ${versions} | awk '{print $NF}'); if [[ "${latest}" = "latest" ]]; then echo "[!] ${app}: ${current} == ${latest}"; [[ "$1" = "-f" ]] && brew cask install "${app}" --force; continue; elif [[ "${current}" = "${latest}" ]]; then continue; fi; echo "[+] ${app}: ${current} -> ${latest}"; brew cask uninstall "${app}" --force; brew cask install "${app}"; done; }
