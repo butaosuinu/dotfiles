@@ -23,5 +23,6 @@
 	"show_line_endings": true,
 	"theme": "Flatland Dark.sublime-theme",
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、。「」【】『』（）！？　てにをはがのともへでや",
-	"word_wrap": true
+	"word_wrap": true,
+	"scroll_past_end":true
 }
