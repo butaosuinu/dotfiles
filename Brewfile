@@ -61,7 +61,6 @@ brew zsh-autosuggestions
 brew zsh-completions
 brew zsh-syntax-highlighting
 
-tap homebrew/versions
 
 tap caskroom/cask
 cask adobe-creative-cloud
@@ -79,7 +78,6 @@ cask java
 cask karabiner-elements
 cask mactex
 cask scroll-reverser
-cask seil
 cask sequel-pro
 cask skype
 cask slack
@@ -87,11 +85,9 @@ cask steam
 cask sublime-text
 cask unity
 cask vagrant
-cask virtualbox
 cask vmware-fusion
 cask witch
 cask xquartz
-cask yummy-ftp
 
 tap caskroom/versions
 
@@ -101,14 +97,8 @@ tap rcmdnk/file
 brew brew-file
 
 # Other Homebrew packages
-brew isl@0.14
+brew isl
 
 # Other Cask applications
-cask xtrafinder
 
 # App Store applications
-appstore 408981434 iMovie (10.1.8)
-appstore 409183694 Keynote (8.0)
-appstore 715768417 Microsoft Remote Desktop (8.0.27325)
-appstore 409203825 Numbers (5.0)
-appstore 409201541 Pages (7.0)
