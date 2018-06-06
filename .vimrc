@@ -9,6 +9,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vimscript/perl-mauke.vim'
 Plugin 'cocopon/iceberg.vim'
 
+if has('lua')
+    Plugin 'Shougo/neocomplete.vim'
+    Plugin 'Shougo/neosnippet'
+    Plugin 'Shougo/neosnippet-snippets'
+endif
+
 call vundle#end()
 filetype plugin indent on
 
@@ -21,4 +27,14 @@ set number
 set list
 set listchars=tab:»-,trail:.,space:.,eol:↲,nbsp:%
 colorscheme iceberg
+
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#min_keyword_length = 3
+let g:neocomplete#enable_auto_delimiter = 1
+let g:neocomplete#auto_completion_start_length = 1
+inoremap <expr><BS> neocomplete#smart_close_popup()."<C-h>"
+
+imap <expr><CR> neosnippet#expandable() ? "<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "<C-y>" : "<CR>"
+imap <expr><TAB> pumvisible() ? "<C-n>" : neosnippet#jumpable() ? "<Plug>(neosnippet_expand_or_jump)" : "<TAB>"
 
