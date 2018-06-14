@@ -55,6 +55,11 @@ if [ -z "$SSH_AGENT_PID" ] || ! kill -0 $SSH_AGENT_PID; then
 fi
 ssh-add -l >& /dev/null || ssh-add
 
+# Auto start tmux
+if [[ ! -n $TMUX ]]; then
+    tmux new-session
+fi
+
 # Completion
 autoload -Uz compinit
 compinit -u
@@ -76,9 +81,15 @@ alias la='ls -al'
 alias ll='ls -l'
 alias v='vim'
 alias sb='subl'
+alias sudo='sudo '
+
+if [[ -x `which colordiff` ]]; then
+  alias diff='colordiff'
+fi
 
 case ${OSTYPE} in
     darwin*)
+        export LSCOLORS=Exfxcxdxbxegedabagacad
         export CLICOLOR=1
         alias ls='ls -F -G'
         ;;
