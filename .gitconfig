@@ -3,7 +3,11 @@
 	email = buta.osuinu@gmail.com
 [alias]
 	st = status
-	ps = push
-	ch = checkout
+    ps = push
+    pst = push --tags
+	co = checkout
 	b = branch
-	cm = commit
+    cm = commit
+    pl = pull
+    plr = pull --rebase
+    rb = rebase
