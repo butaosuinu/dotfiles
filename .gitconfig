@@ -6,8 +6,10 @@
     ps = push
     pst = push --tags
 	co = checkout
-	b = branch
+    cob = checkout -b
+    b = branch
     cm = commit
     pl = pull
     plr = pull --rebase
     rb = rebase
+    cnfl = config -l
