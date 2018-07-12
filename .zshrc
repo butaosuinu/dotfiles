@@ -1,7 +1,7 @@
 # paths
 export GOPATH=$HOME/gocode
 export GOBIN=$GOPATH/bin
-export PATH=$GOPATH/bin:$HOME/.pyenv/shims:$HOME/.nodebrew/current/bin:$PATH
+export PATH=/usr/local/opt/gettext/bin:$GOPATH/bin:$HOME/.pyenv/shims:$HOME/.nodebrew/current/bin:$PATH
 export GO15VENDOREXPERIMENT=1
 export LANG=ja_JP.UTF-8
 export TERM=xterm-256color
@@ -56,9 +56,9 @@ fi
 ssh-add -l >& /dev/null || ssh-add
 
 # Auto start tmux
-if [[ ! -n $TMUX ]]; then
-    tmux new-session
-fi
+#if [[ ! -n $TMUX ]]; then
+#    tmux new-session
+#fi
 
 # Completion
 autoload -Uz compinit
@@ -85,6 +85,10 @@ alias sudo='sudo '
 
 if [[ -x `which colordiff` ]]; then
   alias diff='colordiff'
+fi
+
+if [[ -x `which tree` ]]; then
+    alias tree='tree -C'
 fi
 
 # OS
