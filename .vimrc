@@ -26,7 +26,9 @@ set shiftwidth=4
 set number
 set list
 set listchars=tab:»-,trail:.,space:.,eol:↲,nbsp:%
+set backspace=indent,eol,start
 colorscheme iceberg
+
 
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
