@@ -73,6 +73,9 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 setopt print_eight_bit
 setopt auto_cd
 
+# key bindinig
+bindkey "^[[3~" delete-char
+
 # alias
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 alias g='git'
