@@ -27,6 +27,14 @@ set number
 set list
 set listchars=tab:»-,trail:.,space:.,eol:↲,nbsp:%
 set backspace=indent,eol,start
+set clipboard=unnamed,autoselect
+
+" search
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+
 colorscheme iceberg
 
 
