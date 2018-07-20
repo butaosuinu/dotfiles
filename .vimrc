@@ -8,6 +8,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vimscript/perl-mauke.vim'
 Plugin 'cocopon/iceberg.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'bronson/vim-trailing-whitespace'
 
 if has('lua')
     Plugin 'Shougo/neocomplete.vim'
@@ -28,12 +31,20 @@ set list
 set listchars=tab:»-,trail:.,space:.,eol:↲,nbsp:%
 set backspace=indent,eol,start
 set clipboard=unnamed,autoselect
+set whichwrap=b,s,h,l,<,>,[,],~
+" set cursorline
 
 " search
 set incsearch
 set ignorecase
 set smartcase
 set hlsearch
+
+" status line
+set laststatus=2
+set showmode
+set showcmd
+set ruler
 
 colorscheme iceberg
 
