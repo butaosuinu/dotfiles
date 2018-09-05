@@ -11,6 +11,7 @@ Plugin 'cocopon/iceberg.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'leafgarland/typescript-vim'
 
 if has('lua')
     Plugin 'Shougo/neocomplete.vim'
@@ -32,6 +33,11 @@ set listchars=tab:»-,trail:.,space:.,eol:↲,nbsp:%
 set backspace=indent,eol,start
 set clipboard=unnamed,autoselect
 set whichwrap=b,s,h,l,<,>,[,],~
+
+set wrap
+set linebreak
+set breakindent
+
 " set cursorline
 
 " search
