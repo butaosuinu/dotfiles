@@ -12,6 +12,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'cohama/lexima.vim'
 
 if has('lua')
     Plugin 'Shougo/neocomplete.vim'
