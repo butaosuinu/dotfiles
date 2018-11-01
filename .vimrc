@@ -13,6 +13,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'cohama/lexima.vim'
+Plugin 'posva/vim-vue'
 
 if has('lua')
     Plugin 'Shougo/neocomplete.vim'
@@ -54,6 +55,8 @@ set showcmd
 set ruler
 
 colorscheme iceberg
+
+autocmd FileType vue syntax sync fromstart
 
 augroup fileTypeIndent
     autocmd!
