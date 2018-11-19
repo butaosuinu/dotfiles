@@ -6,7 +6,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'vimscript/perl-mauke.vim'
+"Plugin 'vimscript/perl-mauke.vim'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'Yggdroot/indentLine'
@@ -14,6 +14,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'cohama/lexima.vim'
 Plugin 'posva/vim-vue'
+Plugin 'fatih/vim-go'
 
 if has('lua')
     Plugin 'Shougo/neocomplete.vim'
@@ -73,8 +74,20 @@ let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#min_keyword_length = 3
 let g:neocomplete#enable_auto_delimiter = 1
 let g:neocomplete#auto_completion_start_length = 1
+"let g:neocomplete#sources#omni#input_patterns.go = '\h\w\.\w*'
 inoremap <expr><BS> neocomplete#smart_close_popup()."<C-h>"
 
 imap <expr><CR> neosnippet#expandable() ? "<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "<C-y>" : "<CR>"
 imap <expr><TAB> pumvisible() ? "<C-n>" : neosnippet#jumpable() ? "<Plug>(neosnippet_expand_or_jump)" : "<TAB>"
+
+" vim-go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_fmt_autosave = 1
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 
