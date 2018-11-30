@@ -1,0 +1,10 @@
+Aarilight.theme-azurish
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
+ms-vscode.Go
+ms-vscode.sublime-keybindings
+octref.vetur
+passionkind.prettier-vscode-with-tabs
+samosad.tt
+sldobri.dayle-rees-contrast
+vuetifyjs.vuetify-vscode

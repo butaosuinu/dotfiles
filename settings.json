@@ -1,0 +1,55 @@
+{
+	"editor.renderWhitespace": "all",
+	"editor.fontFamily": "SourceHanCodeJP-Regular",
+	"editor.fontSize": 11,
+	"window.openFilesInNewWindow": "off",
+	"editor.scrollBeyondLastLine": true,
+	"editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、。「」【】『』（）！？　てにをはがのともへでや",
+	"editor.wordWrap": "on",
+	"editor.formatOnPaste": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.snippetSuggestions": "top",
+	"workbench.colorTheme": "Azurish",
+	"editor.stablePeek": true,
+	"[javascript]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.autoIndent": false
+	},
+	"[vue]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.autoIndent": false,
+		"editor.formatOnSave": true
+	},
+	"[go]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4,
+		"editor.autoIndent": false
+	},
+	"[perl]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+		"editor.autoIndent": false
+	},
+	"[python]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.autoIndent": false
+	},
+	"[lua]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+		"editor.autoIndent": false
+	},
+	"[php]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4,
+		"editor.autoIndent": false
+	},
+	"javascript.implicitProjectConfig.experimentalDecorators": true,
+	"emmet.showSuggestionsAsSnippets": true,
+	"editor.formatOnSave": true,
+	"prettier.eslintIntegration": true,
+	"eslint.autoFixOnSave": true
+}
