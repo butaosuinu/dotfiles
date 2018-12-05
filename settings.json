@@ -47,9 +47,10 @@
 		"editor.tabSize": 4,
 		"editor.autoIndent": false
 	},
-	"javascript.implicitProjectConfig.experimentalDecorators": true,
+	"javascript.validate.enable": false,
+	"eslint.enable": true,
+	"eslint.autoFixOnSave": true,
 	"emmet.showSuggestionsAsSnippets": true,
 	"editor.formatOnSave": true,
-	"prettier.eslintIntegration": true,
-	"eslint.autoFixOnSave": true
+	"prettier.eslintIntegration": true
 }

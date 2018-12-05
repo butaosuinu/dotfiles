@@ -1,6 +1,8 @@
 Aarilight.theme-azurish
+CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
+ionutvmi.path-autocomplete
 ms-vscode.Go
 ms-vscode.sublime-keybindings
 octref.vetur
