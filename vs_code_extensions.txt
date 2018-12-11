@@ -2,6 +2,7 @@ Aarilight.theme-azurish
 CoenraadS.bracket-pair-colorizer
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
+henriiik.vscode-perl
 ionutvmi.path-autocomplete
 ms-vscode.Go
 ms-vscode.sublime-keybindings

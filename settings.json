@@ -16,6 +16,11 @@
 		"editor.tabSize": 2,
 		"editor.autoIndent": false
 	},
+	"[typescript]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.autoIndent": false
+	},
 	"[vue]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
@@ -51,6 +56,15 @@
 	"eslint.enable": true,
 	"eslint.autoFixOnSave": true,
 	"emmet.showSuggestionsAsSnippets": true,
+	"prettier.eslintIntegration": true,
 	"editor.formatOnSave": true,
-	"prettier.eslintIntegration": true
+	"javascript.format.enable": false,
+	"eslint.validate": [
+		"javascript",
+		"typescript",
+		{
+			"language": "vue",
+			"autoFix": true
+		}
+	]
 }
