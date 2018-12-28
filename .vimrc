@@ -15,6 +15,9 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'cohama/lexima.vim'
 Plugin 'posva/vim-vue'
 Plugin 'fatih/vim-go'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'roxma/vim-hug-neovim-rpc'
+Plugin 'mattn/emmet-vim'
 
 if has('lua')
     Plugin 'Shougo/neocomplete.vim'
@@ -77,8 +80,10 @@ let g:neocomplete#auto_completion_start_length = 1
 "let g:neocomplete#sources#omni#input_patterns.go = '\h\w\.\w*'
 inoremap <expr><BS> neocomplete#smart_close_popup()."<C-h>"
 
-imap <expr><CR> neosnippet#expandable() ? "<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "<C-y>" : "<CR>"
-imap <expr><TAB> pumvisible() ? "<C-n>" : neosnippet#jumpable() ? "<Plug>(neosnippet_expand_or_jump)" : "<TAB>"
+imap <expr><CR> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-y>" : "\<CR>"
+imap <expr><TAB> pumvisible() ? "\<C-n>" : neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
 
 " vim-go
 let g:go_highlight_functions = 1
