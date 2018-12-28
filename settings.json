@@ -14,12 +14,14 @@
 	"[javascript]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
-		"editor.autoIndent": false
+		"editor.autoIndent": false,
+		"editor.formatOnSave": true
 	},
 	"[typescript]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
-		"editor.autoIndent": false
+		"editor.autoIndent": false,
+		"editor.formatOnSave": true
 	},
 	"[vue]": {
 		"editor.insertSpaces": true,
@@ -30,7 +32,8 @@
 	"[go]": {
 		"editor.insertSpaces": false,
 		"editor.tabSize": 4,
-		"editor.autoIndent": false
+		"editor.autoIndent": false,
+		"editor.formatOnSave": true
 	},
 	"[perl]": {
 		"editor.insertSpaces": true,
@@ -57,7 +60,7 @@
 	"eslint.autoFixOnSave": true,
 	"emmet.showSuggestionsAsSnippets": true,
 	"prettier.eslintIntegration": true,
-	"editor.formatOnSave": true,
+	// "editor.formatOnSave": true,
 	"javascript.format.enable": false,
 	"eslint.validate": [
 		"javascript",

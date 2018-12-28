@@ -11,3 +11,4 @@ passionkind.prettier-vscode-with-tabs
 samosad.tt
 sldobri.dayle-rees-contrast
 vuetifyjs.vuetify-vscode
+yzhang.markdown-all-in-one
