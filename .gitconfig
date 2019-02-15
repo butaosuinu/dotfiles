@@ -1,3 +1,5 @@
+[core]
+    excludesfile = ~/.gitignore_global
 [user]
 	name = butaosuinu
 	email = buta.osuinu@gmail.com
