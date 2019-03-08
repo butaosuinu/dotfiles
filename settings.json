@@ -1,7 +1,6 @@
 {
 	"editor.renderWhitespace": "all",
 	"editor.fontFamily": "SourceHanCodeJP-Regular",
-	"editor.fontSize": 11,
 	"window.openFilesInNewWindow": "off",
 	"editor.scrollBeyondLastLine": true,
 	"editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、。「」【】『』（）！？　てにをはがのともへでや",
@@ -26,7 +25,8 @@
 	"[json]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
-		"editor.autoIndent": false
+		"editor.autoIndent": false,
+		"editor.formatOnSave": true
 	},
 	"[vue]": {
 		"editor.insertSpaces": true,
@@ -58,8 +58,10 @@
 	"[php]": {
 		"editor.insertSpaces": false,
 		"editor.tabSize": 4,
-		"editor.autoIndent": false
+		"editor.autoIndent": false,
+		// "editor.formatOnSave": true
 	},
+	// JavaScript settings
 	"eslint.enable": true,
 	"eslint.autoFixOnSave": true,
 	"emmet.showSuggestionsAsSnippets": true,
@@ -73,5 +75,28 @@
 			"language": "vue",
 			"autoFix": true
 		}
-	]
+	],
+
+	// PHP settings
+	"php.executablePath": "/usr/local/opt/php@7.2/bin/php",
+	"php.suggest.basic": false,
+	"php.validate.enable": true,
+	"php.validate.executablePath": "/usr/local/opt/php@7.2/bin/php",
+	"php.validate.run": "onSave",
+	"phpcs.standard": "PSR2",
+	"phpcs.executablePath": "/Users/takeyu/.composer/vendor/bin/phpcs",
+	"phpcs.autoConfigSearch": true,
+	"symfony-vscode.detectCwd": false,
+	"symfony-vscode.phpPath": "docker exec 8170490678e8 /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
+	"emeraldwalk.runonsave": {
+		"commands": [
+			{
+				"match": "\\.php$",
+				"cmd": "prettier ${file} --write"
+			}
+		]
+	},
+	"window.zoomLevel": 0,
+	"editor.fontSize": 11,
+	"breadcrumbs.enabled": true
 }
