@@ -1,10 +1,4 @@
 {
-	"editor.quickSuggestions": {
-		"other": true,
-		"comments": false,
-		"strings": false
-	},
-	"editor.quickSuggestionsDelay": 0,
 	"editor.renderWhitespace": "all",
 	"editor.fontFamily": "SourceHanCodeJP-Regular",
 	"window.openFilesInNewWindow": "off",
@@ -103,5 +97,16 @@
 	},
 	"window.zoomLevel": 0,
 	"editor.fontSize": 11,
-	"breadcrumbs.enabled": true
+	"breadcrumbs.enabled": true,
+	"bracketPairColorizer.consecutivePairColors": [
+		"()",
+		"[]",
+		"{}",
+		[
+			"palegreen",
+			"lightcyan",
+			"LightSkyBlue"
+		],
+		"Red"
+	]
 }
