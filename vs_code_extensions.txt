@@ -3,6 +3,7 @@ bmewburn.vscode-intelephense-client
 CoenraadS.bracket-pair-colorizer
 crisward.riot-tag
 Cronos87.symfony-snippets
+dariofuzinato.vue-peek
 dbaeumer.vscode-eslint
 emeraldwalk.RunOnSave
 esbenp.prettier-vscode
@@ -10,10 +11,13 @@ felixfbecker.php-debug
 felixfbecker.php-intellisense
 formulahendry.vscode-mysql
 henriiik.vscode-perl
+hollowtree.vue-snippets
 ikappas.phpcs
 ionutvmi.path-autocomplete
 jakebathman.mysql-syntax
 linyang95.phpmd
+marabesi.php-import-checker
+MehediDracula.php-namespace-resolver
 ms-vscode.Go
 ms-vscode.sublime-keybindings
 msjsdiag.debugger-for-chrome
@@ -21,6 +25,7 @@ mtxr.sqltools
 n4zim.vscode-symfony
 neilbrayfield.php-docblocker
 octref.vetur
+Orta.vscode-jest
 passionkind.prettier-vscode-with-tabs
 PeterJausovec.vscode-docker
 samosad.tt
