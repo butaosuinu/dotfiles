@@ -15,5 +15,20 @@
     {
         "key": "shift+cmd+[",
         "command": "-workbench.action.previousEditor"
-    }
+    },
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "tab",
+        "command": "tab",
+        "when": "!suggestWidgetMultipleSuggestions && !suggestWidgetVisible && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+    },
 ]
