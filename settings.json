@@ -67,7 +67,10 @@
 	"prettier.useTabs": false,
 	"eslint.validate": [
 		"javascript",
-		"typescript",
+		{
+			"language": "typescript",
+			"autoFix": true
+		},
 		{
 			"language": "vue",
 			"autoFix": true
@@ -82,11 +85,10 @@
 	"phpcs.standard": "PSR2",
 	"phpcs.executablePath": "/Users/takeyu/.composer/vendor/bin/phpcs",
 	"phpcs.autoConfigSearch": true,
-	"phpmd.validate.rulesetsFile": "/Users/takeyu/phpmd.xml",
 	"symfony-vscode.detectCwd": false,
-	"symfony-vscode.phpPath": "docker exec 8170490678e8 /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
+	"symfony-vscode.phpPath": "docker exec f5476dcd9e73 /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
 	// "symfony-vscode.shellExecutable": "/bin/bash",
-	// "symfony-vscode.shellCommand": "docker exec 8170490678e8 /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
+	// "symfony-vscode.shellCommand": "docker exec f5476dcd9e73 /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
 	"emeraldwalk.runonsave": {
 		"commands": [
 			{
@@ -108,5 +110,18 @@
 			"LightSkyBlue"
 		],
 		"Red"
-	]
+	],
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/**": true,
+		"**/vendor/**": true,
+		"**/var/cache/**": true
+	},
+	"namespaceResolver.sortNatural": true,
+	"namespaceResolver.sortAlphabetically": true,
+	// "phpstan.enabled": true,
+	// "phpstan.path": "/Users/takeyu/.composer/vendor/bin/phpstan",
+	"phpstan.level": "5",
+	"phpstan.autoloadFile": "/Users/takeyu/print-creator/app/autoload.php"
 }
