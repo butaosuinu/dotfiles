@@ -1,5 +1,9 @@
 Aarilight.theme-azurish
+arcticicestudio.nord-visual-studio-code
 bmewburn.vscode-intelephense-client
+breezelin.phpstan
+Calsmurf2904.vscode-phpstan
+cocopon.iceberg-theme
 CoenraadS.bracket-pair-colorizer
 crisward.riot-tag
 Cronos87.symfony-snippets
@@ -18,6 +22,7 @@ jakebathman.mysql-syntax
 linyang95.phpmd
 marabesi.php-import-checker
 MehediDracula.php-namespace-resolver
+ms-azuretools.vscode-docker
 ms-vscode.Go
 ms-vscode.sublime-keybindings
 msjsdiag.debugger-for-chrome
@@ -27,11 +32,16 @@ neilbrayfield.php-docblocker
 octref.vetur
 Orta.vscode-jest
 passionkind.prettier-vscode-with-tabs
-PeterJausovec.vscode-docker
+peymanslh.blueberry-dark-theme
+raashida.fixthecode-vs
+salesforce.codey-midnight
 samosad.tt
 satokaz.vscode-bs-ctrlchar-remover
 sldobri.dayle-rees-contrast
 TheNouillet.symfony-vscode
+VisualStudioExptTeam.vscodeintellicode
 vuetifyjs.vuetify-vscode
+wart.ariake-dark
 whatwedo.twig
 yzhang.markdown-all-in-one
+zamerick.black-ocean
