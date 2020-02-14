@@ -43,5 +43,6 @@ VisualStudioExptTeam.vscodeintellicode
 vuetifyjs.vuetify-vscode
 wart.ariake-dark
 whatwedo.twig
+yorkxin.coffeescript-support
 yzhang.markdown-all-in-one
 zamerick.black-ocean
