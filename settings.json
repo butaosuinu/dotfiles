@@ -9,74 +9,76 @@
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.snippetSuggestions": "top",
 	"workbench.colorTheme": "Azurish",
+	"workbench.view.experimental.allowMovingToNewContainer": true,
 	"editor.stablePeek": true,
 	"[javascript]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
-		"editor.autoIndent": false,
+		"editor.autoIndent": "advanced",
 		"editor.formatOnSave": true
 	},
 	"[typescript]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
-		"editor.autoIndent": false,
+		"editor.autoIndent": "advanced",
 		"editor.formatOnSave": true
 	},
 	"[json]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
-		"editor.autoIndent": false,
+		"editor.autoIndent": "advanced",
 		"editor.formatOnSave": true
 	},
 	"[vue]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
-		"editor.autoIndent": false,
+		"editor.autoIndent": "advanced",
 		"editor.formatOnSave": true
 	},
 	"[go]": {
 		"editor.insertSpaces": false,
 		"editor.tabSize": 4,
-		"editor.autoIndent": false,
+		"editor.autoIndent": "advanced",
 		"editor.formatOnSave": true
 	},
 	"[perl]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 4,
-		"editor.autoIndent": false
+		"editor.autoIndent": "none"
 	},
 	"[python]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
-		"editor.autoIndent": false
+		"editor.autoIndent": "none"
 	},
 	"[lua]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 4,
-		"editor.autoIndent": false
+		"editor.autoIndent": "none"
 	},
 	"[php]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 4,
-		"editor.autoIndent": false,
+		"editor.autoIndent": "advanced",
 	},
-	"eslint.enable": true,
-	"eslint.autoFixOnSave": true,
 	"emmet.showSuggestionsAsSnippets": true,
-	"prettier.tabWidth": 2,
-	"prettier.useTabs": false,
-	"eslint.validate": [
-		"javascript",
-		{
-			"language": "typescript",
-			"autoFix": true
-		},
-		{
-			"language": "vue",
-			"autoFix": true
-		}
-	],
-
+	"eslint.enable": true,
+	"eslint.lintTask.enable": true,
+	// "eslint.autoFixOnSave": true,
+	"eslint.packageManager": "yarn",
+	"eslint.run": "onType",
+	"eslint.nodePath": "/Users/takeyu/.nodenv/shims/node",
+	// "eslint.validate": [
+	// 	"javascript",
+	// 	{
+	// 		"language": "typescript",
+	// 		"autoFix": true
+	// 	},
+	// 	{
+	// 		"language": "vue",
+	// 		"autoFix": true
+	// 	}
+	// ],
 	"php.executablePath": "/usr/local/opt/php@7.2/bin/php",
 	"php.suggest.basic": false,
 	"php.validate.enable": true,
@@ -86,14 +88,14 @@
 	"phpcs.executablePath": "/Users/takeyu/.composer/vendor/bin/phpcs",
 	"phpcs.autoConfigSearch": true,
 	"symfony-vscode.detectCwd": false,
-	"symfony-vscode.phpPath": "docker exec f5476dcd9e73 /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
+	"symfony-vscode.phpPath": "docker exec 20f3c54987ff /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
 	// "symfony-vscode.shellExecutable": "/bin/bash",
 	// "symfony-vscode.shellCommand": "docker exec f5476dcd9e73 /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
 	"emeraldwalk.runonsave": {
 		"commands": [
 			{
 				"match": "\\.php$",
-				"cmd": "prettier ${file} --write"
+				"cmd": "/usr/local/bin/node ./node_modules/prettier/bin-prettier.js ${file} --write"
 			}
 		]
 	},
@@ -122,6 +124,12 @@
 	"namespaceResolver.sortAlphabetically": true,
 	// "phpstan.enabled": true,
 	// "phpstan.path": "/Users/takeyu/.composer/vendor/bin/phpstan",
-	"phpstan.level": "5",
-	"phpstan.autoloadFile": "/Users/takeyu/print-creator/app/autoload.php"
+	"phpstan.level": "6",
+	"phpstan.configuration": "/Users/takeyu/print-creator/phpstan.neon",
+	"phpstan.autoloadFile": "/Users/takeyu/print-creator/app/autoload.php",
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }
