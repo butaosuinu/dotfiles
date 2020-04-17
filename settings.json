@@ -15,7 +15,7 @@
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
 		"editor.autoIndent": "advanced",
-		"editor.formatOnSave": true
+		// "editor.formatOnSave": true
 	},
 	"[typescript]": {
 		"editor.insertSpaces": true,
@@ -88,7 +88,7 @@
 	"phpcs.executablePath": "/Users/takeyu/.composer/vendor/bin/phpcs",
 	"phpcs.autoConfigSearch": true,
 	"symfony-vscode.detectCwd": false,
-	"symfony-vscode.phpPath": "docker exec 20f3c54987ff /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
+	"symfony-vscode.phpPath": "docker exec c41dd3d34be9 /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
 	// "symfony-vscode.shellExecutable": "/bin/bash",
 	// "symfony-vscode.shellCommand": "docker exec f5476dcd9e73 /bin/sh -c 'cd /var/www/project && /usr/local/bin/php \"$@\"' -- ",
 	"emeraldwalk.runonsave": {
