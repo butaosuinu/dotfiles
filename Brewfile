@@ -1,131 +1,103 @@
-
-# tap repositories and their packages
-
-tap homebrew/core
-brew ansible
-brew autoconf
-brew bash
-brew colordiff
-brew dep
-brew docker
-brew docker-compose
-brew gcc@5
-brew gdbm
-brew gettext
-brew ghostscript
-brew git
-brew glide
-brew gmp
-brew go
-brew icu4c
-brew jpeg
-brew libevent
-brew libidn2
-brew libmpc
-brew libtiff
-brew libunistring
-brew libxml2
-brew libyaml
-brew little-cms2
-brew lua
-brew mas
-brew mongodb
-brew mpfr
-brew mysql
-brew ncurses
-brew nkf
-brew nmap
-brew node
-brew nodebrew
-brew openssl
-brew openssl@1.1
-brew pandoc
-brew pcre
-brew pcre2
-brew perl
-brew pkg-config
-brew pyenv
-brew python
-brew python@2
-brew qt
-brew rbenv
-brew readline
-brew reattach-to-user-namespace
-brew ruby
-brew ruby-build
-brew sqlite
-brew tig
-brew tmux
-brew tomcat
-brew tree
-brew vim --with-lua
-brew wget
-brew wine
-brew xz
-brew yarn
-brew zsh
-brew zsh-autosuggestions
-brew zsh-completions
-brew zsh-syntax-highlighting
-
-tap homebrew/cask-versions
-cask sequel-pro-nightly
-
-tap homebrew/versions
-
-tap homebrew/cask
-cask adobe-creative-cloud
-cask android-file-transfer
-cask discord
-cask dropbox
-cask firefox
-cask google-chrome
-cask gyazo
-cask java
-cask mactex
-cask scroll-reverser
-cask skype
-cask steam
-cask the-unarchiver
-cask vagrant
-cask visual-studio-code
-cask witch
-cask yummy-ftp
-
-tap heroku/brew
-brew heroku
-brew heroku-node
-
-tap rcmdnk/file
-brew brew-file
-
-# Other Homebrew packages
-brew isl@0.14
-
-# Other Cask applications
-cask alfred
-cask blender
-cask docker
-cask figma
-cask filezilla
-cask franz
-cask google-japanese-ime
-cask iterm2
-cask karabiner-elements
-cask postman
-cask seil
-cask slack
-cask sublime-text
-cask unity
-cask virtualbox
-cask vmware-fusion
-cask xquartz
-cask xtrafinder
-
-# App Store applications
-appstore 408981434 iMovie (10.1.9)
-appstore 409183694 Keynote (8.2)
-appstore  Install macOS Mojave (14022)
-appstore 715768417 Microsoft Remote Desktop (8.0.30030)
-appstore 409203825 Numbers (5.2)
-appstore 409201541 Pages (7.2)
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "shivammathur/php"
+brew "python@3.11"
+brew "docutils"
+brew "awscli"
+brew "colordiff"
+brew "docker"
+brew "docker-compose", link: false
+brew "git"
+brew "go"
+brew "jq"
+brew "lua"
+brew "mkcert"
+brew "node"
+brew "nodebrew"
+brew "nvm"
+brew "perl"
+brew "python@3.9"
+brew "ruby"
+brew "tig"
+brew "tree"
+brew "vim"
+brew "yarn"
+brew "zsh"
+brew "zsh-syntax-highlighting"
+brew "shivammathur/php/php@7.3"
+cask "alfred"
+cask "docker"
+cask "figma"
+cask "firefox"
+cask "font-source-han-code-jp"
+cask "gitkraken"
+cask "google-japanese-ime"
+cask "hyperswitch"
+cask "iterm2"
+cask "notion"
+cask "postman"
+cask "sequel-pro"
+cask "slack"
+cask "visual-studio-code"
+cask "webstorm"
+vscode "42Crunch.vscode-openapi"
+vscode "Aarilight.theme-azurish"
+vscode "arcticicestudio.nord-visual-studio-code"
+vscode "Arjun.swagger-viewer"
+vscode "bmewburn.vscode-intelephense-client"
+vscode "breezelin.phpstan"
+vscode "Calsmurf2904.vscode-phpstan"
+vscode "cocopon.iceberg-theme"
+vscode "CoenraadS.bracket-pair-colorizer"
+vscode "crisward.riot-tag"
+vscode "Cronos87.symfony-snippets"
+vscode "cssho.vscode-svgviewer"
+vscode "dariofuzinato.vue-peek"
+vscode "dbaeumer.vscode-eslint"
+vscode "emeraldwalk.RunOnSave"
+vscode "esbenp.prettier-vscode"
+vscode "formulahendry.vscode-mysql"
+vscode "GitHub.copilot"
+vscode "golang.go"
+vscode "henriiik.vscode-perl"
+vscode "hollowtree.vue-snippets"
+vscode "ikappas.phpcs"
+vscode "ionutvmi.path-autocomplete"
+vscode "jakebathman.mysql-syntax"
+vscode "marabesi.php-import-checker"
+vscode "MehediDracula.php-namespace-resolver"
+vscode "mermade.openapi-lint"
+vscode "mrmlnc.vscode-scss"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.sublime-keybindings"
+vscode "mtxr.sqltools"
+vscode "n4zim.vscode-symfony"
+vscode "neilbrayfield.php-docblocker"
+vscode "octref.vetur"
+vscode "oderwat.indent-rainbow"
+vscode "onecentlin.laravel-blade"
+vscode "Orta.vscode-jest"
+vscode "passionkind.prettier-vscode-with-tabs"
+vscode "peymanslh.blueberry-dark-theme"
+vscode "phil294.coffeesense"
+vscode "raashida.fixthecode-vs"
+vscode "redhat.vscode-yaml"
+vscode "salesforce.codey-midnight"
+vscode "samosad.tt"
+vscode "satokaz.vscode-bs-ctrlchar-remover"
+vscode "sldobri.dayle-rees-contrast"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "TheNouillet.symfony-vscode"
+vscode "VisualStudioExptTeam.intellicode-api-usage-examples"
+vscode "VisualStudioExptTeam.vscodeintellicode"
+vscode "Vue.volar"
+vscode "Vue.vscode-typescript-vue-plugin"
+vscode "vuetifyjs.vuetify-vscode"
+vscode "wart.ariake-dark"
+vscode "whatwedo.twig"
+vscode "xdebug.php-debug"
+vscode "yzhang.markdown-all-in-one"
+vscode "zamerick.black-ocean"
