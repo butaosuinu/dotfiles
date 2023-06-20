@@ -41,4 +41,14 @@
         "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
         "when": "editorTextFocus"
     },
+    {
+        "key": "cmd+enter",
+        "command": "github.copilot.acceptCursorPanelSolution",
+        "when": "github.copilot.activated && github.copilot.panelVisible"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "-github.copilot.acceptCursorPanelSolution",
+        "when": "github.copilot.activated && github.copilot.panelVisible"
+    },
 ]
