@@ -1,0 +1,9 @@
+background = 050e1e
+background-opacity = 0.8
+font-size = 12
+font-family = "SourceCodePro-Regular"
+theme = Bright Lights
+unfocused-split-opacity = 0.4
+keybind = shift+enter=text:\n
+shell-integration = zsh
+window-save-state = always
