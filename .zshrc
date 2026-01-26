@@ -1,7 +1,7 @@
 # paths
 export GOPATH=$HOME/gocode
 export GOBIN=$GOPATH/bin
-export PATH=$HOME/.nodebrew/current/bin:$HOME/.node_global/bin:/$HOME/.nodenv/shims:usr/local/opt/gettext/bin:$GOPATH/bin:$HOME/.pyenv/shims:/usr/local/opt/php@7.3/bin:$HOME/.composer/vendor/bin:/usr/local/bin:/usr/bin:$PATH
+export PATH=$HOME/.nodebrew/current/bin:$HOME/.node_global/bin:/$HOME/.nodenv/shims:usr/local/opt/gettext/bin:$GOPATH/bin:$HOME/.pyenv/shims:/opt/homebrew/opt/php@7.3/bin:$HOME/.composer/vendor/bin:/usr/local/bin:/usr/bin:$PATH:NODE_ENV=development
 export GO15VENDOREXPERIMENT=1
 export LANG=ja_JP.UTF-8
 export TERM=xterm-256color
@@ -13,9 +13,12 @@ if [ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 elif [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+elif [ -f /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+    source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
-if [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] || [ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+
+if [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] || [ -f ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] || [ -f /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     ZSH_HIGHLIGHT_STYLES[single-quoted-argument]=fg=white
     ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=white
     ZSH_HIGHLIGHT_STYLES[path]='fg=cyan'
@@ -178,3 +181,9 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+
