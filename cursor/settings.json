@@ -1,0 +1,253 @@
+{
+  "editor.renderWhitespace": "all",
+  "editor.fontFamily": "SourceCodePro-Regular",
+  "window.openFilesInNewWindow": "off",
+  "editor.scrollBeyondLastLine": true,
+  "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、。「」【】『』（）！？　てにをはがのともへでや",
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "workbench.colorTheme": "Azurish",
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.view.experimental.allowMovingToNewContainer": true,
+  "editor.stablePeek": true,
+  "[javascript]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "none"
+  },
+  "[typescript]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep"
+  },
+  "[json]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep"
+  },
+  "[vue]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep"
+  },
+  "[svelte]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[go]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "editor.autoIndent": "none",
+    "editor.formatOnSave": true
+  },
+  "[perl]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.autoIndent": "none"
+  },
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "none"
+  },
+  "[lua]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.autoIndent": "none"
+  },
+  "[php]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.autoIndent": "none"
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "eslint.lintTask.enable": true,
+  "eslint.run": "onType",
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "svelte",
+    "markdown"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "svelte"
+  ],
+  // "vetur.experimental.templateInterpolationService": true,
+  // "vetur.format.defaultFormatter.js": "prettier-eslint",
+  // "vetur.format.defaultFormatter.ts": "prettier-tslint",
+  // "vetur.format.enable": false,
+  // "svelte.enable-ts-plugin": true,
+  // "php.executablePath": "/opt/homebrew/opt/php@7.3/bin/php",
+  "php.suggest.basic": false,
+  "php.validate.enable": true,
+  "php.validate.executablePath": "/opt/homebrew/opt/php@7.3/bin/php",
+  "php.validate.run": "onSave",
+  "editor.fontSize": 12,
+  "breadcrumbs.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#98fb98",
+    "editorBracketHighlight.foreground2": "#e0ffff",
+    "editorBracketHighlight.foreground3": "#87cefa"
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/vendor/**": true,
+    "**/var/cache/**": true
+  },
+  "namespaceResolver.sortNatural": true,
+  "namespaceResolver.sortAlphabetically": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  "indentRainbow.colors": [
+    "rgba(255,255,255,0.5)",
+    "rgba(117,214,255,0.5)",
+    "rgba(81,121,252,0.5)",
+    "rgba(33,36,252,0.5)"
+  ],
+  "typescript.locale": "en",
+  "editor.accessibilitySupport": "off",
+  "cSpell.userWords": [
+    "abteseting",
+    "abtest",
+    "apng",
+    "aspida",
+    "autoload",
+    "autoplay",
+    "axios",
+    "Azurish",
+    "camelcase",
+    "columnheader",
+    "combobox",
+    "composables",
+    "corejs",
+    "ctvr",
+    "Cvtr",
+    "daterange",
+    "daterangepicker",
+    "datetime",
+    "entrypoints",
+    "eqeqeq",
+    "esbenp",
+    "gtin",
+    "iife",
+    "intlify",
+    "inview",
+    "Inviewed",
+    "inviews",
+    "KHTML",
+    "Laravel",
+    "letro",
+    "letroconnect",
+    "ltag",
+    "monipla",
+    "mtxr",
+    "networkidle",
+    "noopener",
+    "noreferrer",
+    "openapi",
+    "phpcs",
+    "phpstan",
+    "PMDL",
+    "referer",
+    "reviewdog",
+    "rgba",
+    "searchbox",
+    "skus",
+    "spinbutton",
+    "sqltools",
+    "symfony",
+    "technote",
+    "testid",
+    "testtesttest",
+    "textbox",
+    "tightenco",
+    "tiptap",
+    "Typecheck",
+    "Ugcs",
+    "Ugcset",
+    "unconfirm",
+    "updown",
+    "vetur",
+    "viewports",
+    "VITE",
+    "vsintellicode"
+  ],
+  "github.copilot.advanced": {},
+  "editor.inlineSuggest.enabled": true,
+  "figma.autocompleteBlocks": true,
+  "playwright.reuseBrowser": true,
+  "playwright.showTrace": false,
+  "diffEditor.renderSideBySide": false,
+  "vue.server.hybridMode": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "cursor.chat.alwaysSearchWeb": true,
+  "gitlens.graph.minimap.enabled": false,
+  "svelte.enable-ts-plugin": true,
+  "githubPullRequests.pullBranch": "never",
+  "github.copilot.chat.experimental.inlineChatCompletionTrigger.enabled": true,
+  "cline.modelSettings.o3Mini.reasoningEffort": "high",
+  "cline.vsCodeLmModelSelector": {},
+  "github.copilot.chat.startDebugging.enabled": false,
+  "github.copilot.chat.completionContext.typescript.mode": "on",
+  "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+  "cursor.cpp.enablePartialAccepts": true,
+  "go.toolsManagement.autoUpdate": true,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "claude-code.useTerminal": true,
+  "claudeCode.useTerminal": true,
+  "gitlens.ai.model": "gitkraken",
+  "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash"
+}

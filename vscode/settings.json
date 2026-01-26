@@ -1,6 +1,7 @@
 {
   "editor.renderWhitespace": "all",
-  "editor.fontFamily": "SourceHanCodeJP-Regular",
+  // "editor.fontFamily": "SourceHanCodeJP-Regular",
+  "editor.fontFamily": "SourceCodePro-Regular",
   "window.openFilesInNewWindow": "off",
   "editor.scrollBeyondLastLine": true,
   "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?、。「」【】『』（）！？　てにをはがのともへでや",
@@ -30,9 +31,8 @@
   "[json]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.autoIndent": "keep"
+    // "editor.formatOnSave": true
   },
   "[vue]": {
     "editor.insertSpaces": true,
@@ -41,6 +41,12 @@
     // "editor.codeActionsOnSave": {
     // 	"source.fixAll.eslint": true
     // },
+  },
+  "[svelte]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[go]": {
     "editor.insertSpaces": false,
@@ -68,14 +74,44 @@
     "editor.tabSize": 4,
     "editor.autoIndent": "none"
   },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
   "emmet.showSuggestionsAsSnippets": true,
   "eslint.lintTask.enable": true,
-  "eslint.packageManager": "npm",
   "eslint.run": "onType",
   // "eslint.runtime": "/Users/takeyu/.nodenv/shims/node",
-  "eslint.nodePath": "/Users/takeyu/.nodenv/shims/node",
+  "eslint.nodePath": "/opt/homebrew/bin/node",
   "editor.defaultFormatter": "esbenp.prettier-vscode", // フォーマッターをPrettierにする
   "editor.formatOnSave": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "svelte",
+    "markdown"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "svelte"
+  ],
   // "eslint.validate": [
   // 	{
   // 		"language": "typescript",
@@ -90,10 +126,11 @@
   "vetur.format.defaultFormatter.js": "prettier-eslint",
   "vetur.format.defaultFormatter.ts": "prettier-tslint",
   "vetur.format.enable": false,
-  "php.executablePath": "/usr/local/opt/php@7.2/bin/php",
+  "svelte.enable-ts-plugin": true,
+  "php.executablePath": "/opt/homebrew/opt/php@7.3/bin/php",
   "php.suggest.basic": false,
   "php.validate.enable": true,
-  "php.validate.executablePath": "/usr/local/opt/php@7.2/bin/php",
+  "php.validate.executablePath": "/opt/homebrew/opt/php@7.3/bin/php",
   "php.validate.run": "onSave",
   "phpcs.standard": "PSR2",
   "phpcs.executablePath": "/Users/takeyu/.composer/vendor/bin/phpcs",
@@ -110,7 +147,7 @@
       }
     ]
   },
-  "editor.fontSize": 11,
+  "editor.fontSize": 12,
   "breadcrumbs.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
@@ -130,13 +167,13 @@
   "namespaceResolver.sortAlphabetically": true,
   // "phpstan.enabled": true,
   // "phpstan.path": "/Users/takeyu/.composer/vendor/bin/phpstan",
-  "phpstan.level": "6",
-  "phpstan.configuration": "/Users/takeyu/print-creator/phpstan.neon",
-  "phpstan.autoloadFile": "/Users/takeyu/print-creator/app/autoload.php",
+  // "phpstan.level": "6",
+  // "phpstan.configuration": "/Users/takeyu/print-creator/phpstan.neon",
+  // "phpstan.autoloadFile": "/Users/takeyu/print-creator/app/autoload.php",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "files.associations": {
     "*.vue": "vue"
@@ -144,7 +181,6 @@
   "[sql]": {
     "editor.defaultFormatter": "mtxr.sqltools"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
   "indentRainbow.indicatorStyle": "light",
   "indentRainbow.lightIndicatorStyleLineWidth": 1,
   "indentRainbow.colors": [
@@ -153,24 +189,66 @@
     "rgba(81,121,252,0.5)",
     "rgba(33,36,252,0.5)"
   ],
-  "prettier.singleQuote": true,
+  // "prettier.singleQuote": true,
+  // "prettier.documentSelectors": ["**/*.svelte"],
   "typescript.locale": "en",
   "editor.accessibilitySupport": "off",
   "cSpell.userWords": [
+    "abteseting",
     "abtest",
+    "apng",
     "aspida",
+    "autoload",
+    "autoplay",
     "camelcase",
+    "columnheader",
+    "combobox",
     "composables",
+    "corejs",
+    "Cvtr",
     "daterange",
     "daterangepicker",
+    "entrypoints",
+    "iife",
     "intlify",
     "inview",
+    "Inviewed",
     "inviews",
+    "KHTML",
+    "Laravel",
     "letro",
+    "ltag",
+    "networkidle",
+    "noopener",
+    "noreferrer",
+    "openapi",
+    "phpcs",
+    "phpstan",
     "PMDL",
+    "referer",
+    "reviewdog",
+    "rgba",
+    "skus",
+    "symfony",
     "technote",
-    "Ugcs"
+    "testid",
+    "testtesttest",
+    "textbox",
+    "tightenco",
+    "Typecheck",
+    "Ugcs",
+    "Ugcset",
+    "vetur",
+    "viewports",
+    "VITE"
   ],
   "github.copilot.advanced": {},
-  "editor.inlineSuggest.enabled": true
+  "editor.inlineSuggest.enabled": true,
+  "figma.autocompleteBlocks": true,
+  "playwright.reuseBrowser": true,
+  "playwright.showTrace": false,
+  "diffEditor.renderSideBySide": false,
+  "vue.server.hybridMode": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "github.copilot.editor.enableAutoCompletions": true
 }
