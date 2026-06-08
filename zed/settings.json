@@ -1,0 +1,27 @@
+{
+  "theme": "Azurish",
+  "buffer_font_family": "Source Code Pro",
+  "buffer_font_size": 12,
+  "format_on_save": "on",
+  "show_whitespaces": "all",
+  "soft_wrap": "editor_width",
+  "minimap": {
+    "show": "always"
+  },
+  "tab_size": 2,
+  "languages": {
+    "Go": {
+      "hard_tabs": true,
+      "tab_size": 4
+    },
+    "PHP": {
+      "tab_size": 4
+    },
+    "Perl": {
+      "tab_size": 4
+    },
+    "Lua": {
+      "tab_size": 4
+    }
+  }
+}
