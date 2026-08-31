@@ -1,5 +1,20 @@
 {
+  "colorize_brackets": true,
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "cli_default_open_behavior": "new_window",
   "theme": "Azurish",
+  "theme_overrides": {
+    "Azurish": {
+      "accents": ["#98fb98", "#e0ffff", "#87cefa"]
+    }
+  },
   "buffer_font_family": "Source Code Pro",
   "buffer_font_size": 12,
   "format_on_save": "on",
