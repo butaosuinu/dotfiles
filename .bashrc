@@ -22,3 +22,4 @@ alias la='ls -al'
 alias ll='ls -l'
 alias v='vim'
 alias sb='subl'
+. "$HOME/.cargo/env"
