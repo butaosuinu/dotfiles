@@ -187,3 +187,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 
+export PATH="$HOME/.local/bin:$PATH"
+
+# opencode
+export PATH=/Users/butaosuinu/.opencode/bin:$PATH
