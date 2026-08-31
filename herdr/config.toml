@@ -1,0 +1,18 @@
+onboarding = false
+[ui.sound]
+enabled = true
+
+[theme]
+name = "nord"
+auto_switch = false
+
+[ui]
+agent_panel_sort = "spaces"
+show_agent_labels_on_pane_borders = true
+
+[experimental]
+pane_history = true
+switch_ascii_input_source_in_prefix = false
+
+[ui.toast]
+delivery = "herdr"
