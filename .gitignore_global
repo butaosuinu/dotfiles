@@ -54,3 +54,12 @@ tags
 
 
 **/memory-bank/*
+
+**/.claude/settings.local.json
+
+**/.claude/settings.local.json
+
+# personal orchestrators (dmux / fanout) — 個人ツール。共有リポジトリには載せない
+.dmux/
+.dmux-hooks/
+.fanout/
