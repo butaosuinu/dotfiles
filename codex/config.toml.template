@@ -1,0 +1,273 @@
+model = "gpt-5.6-sol"
+model_reasoning_effort = "xhigh"
+plan_mode_reasoning_effort = "ultra"
+
+service_tier = "default"
+approvals_reviewer = "auto_review"
+
+
+notify = ["__DOTFILES_CODEX_HOME__/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+
+[projects."__DOTFILES_HOME__/Dollrobe"]
+trust_level = "trusted"
+
+[projects."__DOTFILES_HOME__/fanout"]
+trust_level = "trusted"
+
+[projects."__DOTFILES_HOME__/ai-limit-quota-hud"]
+trust_level = "trusted"
+
+[projects."__DOTFILES_HOME__/youtube_live_pip_extension"]
+trust_level = "trusted"
+
+[projects."__DOTFILES_HOME__"]
+trust_level = "trusted"
+
+[projects."/private/tmp"]
+trust_level = "trusted"
+
+[projects."__DOTFILES_HOME__/ENG-5003_butaosuinu"]
+trust_level = "trusted"
+
+[projects."__DOTFILES_HOME__/generate-doll-list-image"]
+trust_level = "trusted"
+
+[projects."/private/tmp/tpl"]
+trust_level = "trusted"
+
+[projects."/private/tmp/claude-501/-Users-butaosuinu-fanout--fanout-worktrees-manual-32-skillsclaude-codecodexpushlinterpushci-pane/98c120fe-1a27-4b94-a242-9d681973e3db/scratchpad/codex-spike"]
+trust_level = "trusted"
+
+[projects."__DOTFILES_HOME__/godep-cruiser"]
+trust_level = "trusted"
+
+[projects."__DOTFILES_HOME__/dotfiles"]
+trust_level = "trusted"
+
+[projects."/private/tmp/fanout-532-e2e4.lOtyOe"]
+trust_level = "trusted"
+
+[projects."/private/tmp/fanout-532-e2e5.yxTh7q"]
+trust_level = "trusted"
+
+[projects."/private/tmp/fanout-532-relay-e2e2.u6gYvk"]
+trust_level = "trusted"
+
+[projects."/private/tmp/fanout-h082-20260820-121015/fanout"]
+trust_level = "trusted"
+
+[tui]
+status_line = ["model-with-reasoning", "current-dir", "model", "project-name", "git-branch", "run-state", "context-used"]
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
+"gpt-5.6-sol" = 4
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."sites@openai-bundled"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_create_pull_request]
+approval_mode = "approve"
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_create_issue]
+approval_mode = "approve"
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_update_issue]
+approval_mode = "approve"
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_mark_pull_request_ready_for_review]
+approval_mode = "approve"
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_update_pull_request]
+approval_mode = "approve"
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_convert_pull_request_to_draft]
+approval_mode = "approve"
+
+[marketplaces.openai-bundled]
+last_updated = "2026-08-25T02:57:36Z"
+source_type = "local"
+source = "__DOTFILES_CODEX_HOME__/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-08-27T09:25:15Z"
+source_type = "local"
+source = "__DOTFILES_CACHE_HOME__/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[features]
+hooks = true
+memories = true
+js_repl = false
+
+[desktop]
+ambient-suggestions-enabled = true
+appearanceTheme = "dark"
+conversationDetailMode = "STEPS_COMMANDS"
+keepRemoteControlAwakeWhilePluggedIn = true
+followUpQueueMode = "queue"
+dock-icon-preference = "codex-system"
+appearanceDarkCodeThemeId = "tokyo-night"
+git-create-pull-request-as-draft = false
+git-pull-request-merge-method = "squash"
+reviewDelivery = "detached"
+
+[desktop.open-in-target-preferences]
+global = "zed"
+
+[desktop.open-in-target-preferences.perPath]
+"__DOTFILES_HOME__/fanout/.fanout/worktrees/manual-15-pane-closeuituihelppopup-pane" = "zed"
+
+[desktop.appearanceDarkChromeTheme]
+accent = "#3d59a1"
+contrast = 50
+ink = "#a9b1d6"
+opaqueWindows = true
+surface = "#1a1b26"
+
+[desktop.appearanceDarkChromeTheme.fonts]
+
+[desktop.appearanceDarkChromeTheme.semanticColors]
+diffAdded = "#449dab"
+diffRemoved = "#914c54"
+skill = "#9d7cd8"
+
+[mcp_servers.node_repl]
+args = []
+command = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node_repl"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = "/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+NODE_REPL_NODE_PATH = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+NODE_REPL_TRUSTED_CODE_PATHS = "__DOTFILES_CODEX_HOME__:/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+CODEX_HOME = "__DOTFILES_CODEX_HOME__"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "323bc3e687e17d7e377238d9f4c69111c4d0e6219103b6316d8c52082489533b"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = "Control desktop apps on macOS through Computer Use."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.803.41515"
+SKY_CUA_SERVICE_PATH = "__DOTFILES_CODEX_HOME__/computer-use/Codex Computer Use.app"
+CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex"
+
+[mcp_servers.chrome-devtools]
+command = "npx"
+args = ["-y", "chrome-devtools-mcp@latest", "--isolated", "--viewport=1440x1000", "--no-performance-crux", "--redact-network-headers"]
+
+[mcp_servers.chrome-devtools.env]
+CHROME_DEVTOOLS_MCP_NO_UPDATE_CHECKS = "1"
+CHROME_DEVTOOLS_MCP_NO_USAGE_STATISTICS = "1"
+
+[mcp_servers.chrome-devtools.tools.new_page]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.take_snapshot]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.fill_form]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.click]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.fill]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.get_network_request]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.take_screenshot]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.resize_page]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.navigate_page]
+approval_mode = "approve"
+
+[mcp_servers.chrome-devtools.tools.evaluate_script]
+approval_mode = "approve"
+
+[mcp_servers.computer-use]
+command = "./Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient"
+args = ["mcp"]
+cwd = "."
+enabled = false
+
+[hooks.state]
+
+[hooks.state."__DOTFILES_HOME__/ai-limit-quota-hud/.codex/hooks.json:post_tool_use:0:0"]
+trusted_hash = "sha256:63c390d9cd44eb0e123fd2bde7577ab34cbccfdc2572964fa2323f6b1a4f5e02"
+
+[hooks.state."__DOTFILES_HOME__/ai-limit-quota-hud/.codex/hooks.json:stop:0:0"]
+trusted_hash = "sha256:1e50319699fefeacbcfc9fe91574f4348302cd546b20e4ea030cc59a1c381f54"
+
+[hooks.state."__DOTFILES_HOME__/ENG-5003_butaosuinu/.codex/hooks.json:post_tool_use:0:0"]
+trusted_hash = "sha256:67739c06469198375ac0078c92a5cdf2196a58153b4f6d1986d9e406a73af1eb"
+
+[hooks.state."__DOTFILES_HOME__/ENG-5003_butaosuinu/.codex/hooks.json:stop:0:0"]
+trusted_hash = "sha256:dfe43a0a059811096c10fae183bc2c63736fe5b0f2a656640cae95df51dc7659"
+
+[hooks.state."__DOTFILES_HOME__/ENG-5003_butaosuinu/.codex/hooks.json:stop:0:1"]
+trusted_hash = "sha256:5a72ad86cb1a76384fddbd8d01765ea1dd4488453f9a2d7d563e3c83400675a3"
+
+[hooks.state."__DOTFILES_CODEX_HOME__/hooks.json:session_start:0:0"]
+trusted_hash = "sha256:5c9b1bbeae7bf46eb21d70687fe21001ea76eed8af534063e2f7eb515d65d8e1"
+
+[hooks.state."__DOTFILES_HOME__/fanout/.codex/hooks.json:pre_tool_use:0:0"]
+trusted_hash = "sha256:029e9168f169e7cd78191eb825659fdc57ae7f725d721d9a1d10234e6dd529c5"
+
+[hooks.state."__DOTFILES_HOME__/fanout/.codex/hooks.json:post_tool_use:0:0"]
+trusted_hash = "sha256:c87c1fa73e382dcbe1c717f130ea3eec795b6849dfa848e4a6c4fdcf8fc8c75a"
+
+[hooks.state."__DOTFILES_HOME__/fanout/.codex/hooks.json:stop:0:0"]
+trusted_hash = "sha256:97563bb157655e43e693407a14376e48131fdeb0b2ff17109634fcd365e0e4ef"
+
+[hooks.state."__DOTFILES_HOME__/godep-cruiser/.codex/hooks.json:pre_tool_use:0:0"]
+trusted_hash = "sha256:f91306b4984f8757cb7ddf6ad1845a1d0d983bdad362abefd72400cab5c11183"
+
+[hooks.state."__DOTFILES_HOME__/godep-cruiser/.codex/hooks.json:post_tool_use:0:0"]
+trusted_hash = "sha256:67a695b64604983311eb5e585b1072f843e7de4f9fca7b6010dbf0d0d25a2012"
+
+[hooks.state."__DOTFILES_HOME__/fanout/.codex/hooks.json:post_tool_use:0:1"]
+trusted_hash = "sha256:836cf1f37f4b21b43d9136ac38ce4a7616bfd0227b5008cede602a6a27334d75"
+
+[notice]
+hide_rate_limit_model_nudge = true
+
+[shell_environment_policy.set]
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "323bc3e687e17d7e377238d9f4c69111c4d0e6219103b6316d8c52082489533b"
+NODE_REPL_TRUSTED_CODE_PATHS = "__DOTFILES_CODEX_HOME__:/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"

@@ -27,6 +27,9 @@ Thumbs.db
 _obj
 _test
 
+# Machine-rendered Codex configuration
+/codex/config.toml
+
 # Architecture specific extensions/prefixes
 *.[568vq]
 [568vq].out
