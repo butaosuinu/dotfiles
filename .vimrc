@@ -1,31 +1,60 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Plugins are managed by Vundle. Bootstrap it on first launch so that a fresh
+" dotfiles checkout does not error out, and fall back to a plain configuration
+" when it cannot be installed at all.
+let s:bundle_dir = expand('~/.vim/bundle')
+let s:vundle_dir = s:bundle_dir . '/Vundle.vim'
 
-Plugin 'VundleVim/Vundle.vim'
-
-"Plugin 'vimscript/perl-mauke.vim'
-Plugin 'cocopon/iceberg.vim'
-Plugin 'itchyny/lightline.vim'
-Plugin 'Yggdroot/indentLine'
-Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'cohama/lexima.vim'
-Plugin 'posva/vim-vue'
-Plugin 'fatih/vim-go'
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
-Plugin 'roxma/vim-hug-neovim-rpc'
-Plugin 'mattn/emmet-vim'
-
-if has('lua')
-    Plugin 'Shougo/neocomplete.vim'
-    Plugin 'Shougo/neosnippet'
-    Plugin 'Shougo/neosnippet-snippets'
+if !isdirectory(s:vundle_dir) && executable('git')
+    echo 'Installing Vundle.vim ...'
+    silent execute '!git clone --depth 1 https://github.com/VundleVim/Vundle.vim '
+                \ . shellescape(s:vundle_dir)
+    if !isdirectory(s:vundle_dir)
+        echomsg 'Vundle.vim could not be installed; starting without plugins.'
+    endif
 endif
 
-call vundle#end()
+if isdirectory(s:vundle_dir)
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+
+    Plugin 'VundleVim/Vundle.vim'
+
+    Plugin 'cocopon/iceberg.vim'
+    Plugin 'itchyny/lightline.vim'
+    Plugin 'Yggdroot/indentLine'
+    Plugin 'bronson/vim-trailing-whitespace'
+    Plugin 'cohama/lexima.vim'
+    Plugin 'posva/vim-vue'
+    Plugin 'fatih/vim-go'
+    Plugin 'mattn/emmet-vim'
+    Plugin 'Shougo/neosnippet'
+    Plugin 'Shougo/neosnippet-snippets'
+    " neosnippet uses it to pick the snippet set by cursor context.
+    Plugin 'Shougo/context_filetype.vim'
+
+    call vundle#end()
+
+    " Fetch whatever is not on disk yet, then reload so the colorscheme and the
+    " plugin-dependent mappings below actually take effect.
+    let s:missing = 0
+    for s:bundle in get(g:, 'vundle#bundles', [])
+        if !isdirectory(s:bundle.path())
+            let s:missing = 1
+            break
+        endif
+    endfor
+
+    if s:missing
+        augroup vimrcBootstrap
+            autocmd!
+            autocmd VimEnter * ++once PluginInstall | quit | source $MYVIMRC
+        augroup END
+    endif
+endif
+
 filetype plugin indent on
 
 syntax on
@@ -58,9 +87,7 @@ set showmode
 set showcmd
 set ruler
 
-colorscheme iceberg
-
-autocmd FileType vue syntax sync fromstart
+silent! colorscheme iceberg
 
 augroup fileTypeIndent
     autocmd!
@@ -70,20 +97,15 @@ augroup fileTypeIndent
     autocmd BufNewFile,BufRead *.css setlocal tabstop=2 softtabstop=2 shiftwidth=2
     autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 softtabstop=4 shiftwidth=4
     autocmd BufNewFile,BufRead *.vue setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd FileType vue syntax sync fromstart
 augroup END
 
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#min_keyword_length = 3
-let g:neocomplete#enable_auto_delimiter = 1
-let g:neocomplete#auto_completion_start_length = 1
-"let g:neocomplete#sources#omni#input_patterns.go = '\h\w\.\w*'
-inoremap <expr><BS> neocomplete#smart_close_popup()."<C-h>"
-
-imap <expr><CR> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-y>" : "\<CR>"
-imap <expr><TAB> pumvisible() ? "\<C-n>" : neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-imap <C-k> <Plug>(neosnippet_expand_or_jump)
-smap <C-k> <Plug>(neosnippet_expand_or_jump)
+if isdirectory(s:bundle_dir . '/neosnippet')
+    imap <expr><CR> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-y>" : "\<CR>"
+    imap <expr><TAB> pumvisible() ? "\<C-n>" : neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+    imap <C-k> <Plug>(neosnippet_expand_or_jump)
+    smap <C-k> <Plug>(neosnippet_expand_or_jump)
+endif
 
 " vim-go
 let g:go_highlight_functions = 1
@@ -95,4 +117,3 @@ let g:go_fmt_autosave = 1
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
-

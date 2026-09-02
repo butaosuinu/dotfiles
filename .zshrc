@@ -1,7 +1,7 @@
 # paths
 export GOPATH=$HOME/gocode
 export GOBIN=$GOPATH/bin
-export PATH=$HOME/.nodebrew/current/bin:$HOME/.node_global/bin:$HOME/.nodenv/shims:/usr/local/opt/gettext/bin:$GOPATH/bin:$HOME/.pyenv/shims:/opt/homebrew/opt/php@7.3/bin:$HOME/.composer/vendor/bin:/usr/local/bin:/usr/bin:$PATH:NODE_ENV=development
+export PATH=$HOME/.nodebrew/current/bin:$HOME/.node_global/bin:$HOME/.nodenv/shims:/usr/local/opt/gettext/bin:$GOPATH/bin:$HOME/.pyenv/shims:/opt/homebrew/opt/php@7.3/bin:$HOME/.composer/vendor/bin:$PATH
 export GO15VENDOREXPERIMENT=1
 export LANG=ja_JP.UTF-8
 export TERM=xterm-256color
