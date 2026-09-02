@@ -62,7 +62,9 @@ if [ -d "$HOME/.ssh" ]; then
     if ssh-add -l >&/dev/null ; then
         echo "ssh-agent: Identity is already stored."
     else
-        ssh-add
+        # Load keys whose passphrase is stored in the macOS Keychain, so a new
+        # shell never blocks on a passphrase prompt.
+        ssh-add --apple-load-keychain 2>/dev/null
     fi
 fi
 
