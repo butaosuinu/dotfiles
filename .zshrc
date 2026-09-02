@@ -1,7 +1,7 @@
 # paths
 export GOPATH=$HOME/gocode
 export GOBIN=$GOPATH/bin
-export PATH=$HOME/.nodebrew/current/bin:$HOME/.node_global/bin:/$HOME/.nodenv/shims:usr/local/opt/gettext/bin:$GOPATH/bin:$HOME/.pyenv/shims:/opt/homebrew/opt/php@7.3/bin:$HOME/.composer/vendor/bin:/usr/local/bin:/usr/bin:$PATH:NODE_ENV=development
+export PATH=$HOME/.nodebrew/current/bin:$HOME/.node_global/bin:$HOME/.nodenv/shims:/usr/local/opt/gettext/bin:$GOPATH/bin:$HOME/.pyenv/shims:/opt/homebrew/opt/php@7.3/bin:$HOME/.composer/vendor/bin:/usr/local/bin:/usr/bin:$PATH:NODE_ENV=development
 export GO15VENDOREXPERIMENT=1
 export LANG=ja_JP.UTF-8
 export TERM=xterm-256color
@@ -49,19 +49,21 @@ zstyle ':vcs_info:*' formats "%F{yellow}%c%u(%b)%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 
-# Setup ssh-agent
-if [ -e ~/.ssh-agent ]; then
-    source ~/.ssh-agent
-fi
-ssh-add -l >& /dev/null
-if [ $? = 2 ]; then
-    ssh-agent > ~/.ssh-agent
-    source ~/.ssh-agent
-fi
-if ssh-add -l >&/dev/null ; then
-    echo "ssh-agent: Identity is already stored."
-else
-    ssh-add
+# Setup ssh-agent (skip entirely when there are no keys to load)
+if [ -d "$HOME/.ssh" ]; then
+    if [ -e ~/.ssh-agent ]; then
+        source ~/.ssh-agent
+    fi
+    ssh-add -l >& /dev/null
+    if [ $? = 2 ]; then
+        ssh-agent > ~/.ssh-agent
+        source ~/.ssh-agent
+    fi
+    if ssh-add -l >&/dev/null ; then
+        echo "ssh-agent: Identity is already stored."
+    else
+        ssh-add
+    fi
 fi
 
 # Auto start tmux
@@ -73,7 +75,7 @@ fi
 autoload -Uz compinit
 compinit -u
 
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
                               /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
@@ -190,4 +192,4 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 # opencode
-export PATH=/Users/butaosuinu/.opencode/bin:$PATH
+export PATH=$HOME/.opencode/bin:$PATH

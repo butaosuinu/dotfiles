@@ -3,11 +3,13 @@ export GOBIN=$GOPATH/bin
 export PATH=$GOPATH/bin:$HOME/.nodebrew/current/bin:$PATH
 export GO15VENDOREXPERIMENT=1
 export LANG=ja_JP.UTF-8
-source ~/git-completion.bash
-source ~/git-prompt.sh
+[ -f ~/git-completion.bash ] && source ~/git-completion.bash
+[ -f ~/git-prompt.sh ] && source ~/git-prompt.sh
+# PS1 below calls __git_ps1; keep it defined even without git-prompt.sh
+declare -f __git_ps1 >/dev/null || __git_ps1() { :; }
 PS1="\[\033[1;32m\][\d \t]\[\033[0;36m\] \h @\u: \w\[\033[36m\]\[\033[33m\]\$(__git_ps1)\n\[\033[37m\]$ "
 
-shopt -s autocd
+shopt -s autocd 2>/dev/null || true
 
 if [ "$(uname)" = 'Darwin' ]; then
     alias ls='ls -F -G'
@@ -22,4 +24,4 @@ alias la='ls -al'
 alias ll='ls -l'
 alias v='vim'
 alias sb='subl'
-. "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
